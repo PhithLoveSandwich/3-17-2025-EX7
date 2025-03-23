@@ -6,5 +6,8 @@ class Pizza extends food_1.Food {
     constructor(name) {
         super(name);
     }
+    topping() {
+        return `Pizza: ${this.name} added topping.`;
+    }
 }
 exports.Pizza = Pizza;

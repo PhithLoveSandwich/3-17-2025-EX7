@@ -6,5 +6,8 @@ class Sushi extends food_1.Food {
     constructor(name) {
         super(name);
     }
+    vasabi() {
+        return `Sushi: ${this.name} added vasabi.`;
+    }
 }
 exports.Sushi = Sushi;

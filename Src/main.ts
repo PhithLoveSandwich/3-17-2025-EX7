@@ -38,7 +38,9 @@ const G1 = new Guitar("Veelah V1-DCE");
 const P1 = new Piano("Kawai KDP120");
 console.log("--------------------------------------------------");
 console.log(`${G1.play()}`)
+console.log(`${G1.pined()}`)
 console.log(`${P1.play()}`)
+console.log(`${P1.sited()}`);
 console.log("--------------------------------------------------");
 console.log();
 import { Pizza } from "./pizza";
@@ -47,15 +49,17 @@ const PZ1 = new Pizza("Roman Pizza");
 const S1 = new Sushi("Maki");
 console.log("--------------------------------------------------");
 console.log(`${PZ1.serve()}`)
+console.log(`${PZ1.topping()}`)
 console.log(`${S1.serve()}`)
+console.log(`${S1.vasabi()}`)
 console.log("--------------------------------------------------");
 console.log();
 import { PushNotification } from "./notification";
 import { EmailNotification } from "./notification";
 import { SMSNotification } from "./notification";
-const EM1 = new EmailNotification("");
-const PN1 = new PushNotification("")
-const SM1 = new SMSNotification("")
+const EM1 = new EmailNotification("664259020@webmail.npru.ac.th");
+const PN1 = new PushNotification("Thanawat Srisaeng")
+const SM1 = new SMSNotification("0855564028")
 console.log("--------------------------------------------------");
 console.log(`${EM1.send("เมลล์ทดสอบ")}`)
 console.log(`${PN1.send("เมลล์ทดสอบ")}`)
